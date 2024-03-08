@@ -3,7 +3,7 @@ apiVersion: "apps/v1"
 kind: "Deployment"
 metadata:
   name: "nginx-1"
-  namespace: "app"
+  namespace: "cfgsync"
   labels:
     app: "nginx-1"
 spec:
