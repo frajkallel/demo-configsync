@@ -26,32 +26,3 @@ spec:
           limits:
             memory: "300Mi"
             cpu: "250m"
----
----
-apiVersion: "apps/v1"
-kind: "Deployment"
-metadata:
-  name: "nginx-1"
-  namespace: "demo"
-  labels:
-    app: "nginx-1"
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: "nginx-1"
-  template:
-    metadata:
-      labels:
-        app: "nginx-1"
-    spec:
-      containers:
-      - name: "nginx-1"
-        image: "nginx:latest"
-        resources:
-          requests:
-            memory: "300Mi"
-            cpu: "250m"
-          limits:
-            memory: "300Mi"
-            cpu: "250m"
