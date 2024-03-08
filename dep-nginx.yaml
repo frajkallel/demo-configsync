@@ -31,7 +31,7 @@ apiVersion: "autoscaling/v2beta1"
 kind: "HorizontalPodAutoscaler"
 metadata:
   name: "nginx-1-hpa-oqae"
-  namespace: "app"
+  namespace: "cfgsync"
   labels:
     app: "nginx-1"
 spec:
